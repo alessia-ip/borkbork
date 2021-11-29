@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Build.Player;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TestSpawn : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class TestSpawn : MonoBehaviour
     
     // Start is called before the first frame update
 
-    public void SpawnNew(string newLine)
+    public void SpawnNew(string newLine, Color bgCol)
     {
         if (allDialogue.Count > 0)
         {
@@ -43,6 +44,7 @@ public class TestSpawn : MonoBehaviour
         }
         
         var newBox = Instantiate(npcPrefab);
+        newBox.GetComponent<Image>().color = bgCol;
         newBox.GetComponentInChildren<TMP_Text>().text = newLine;
         newBox.transform.SetParent(canv.transform, false); 
         newBox.GetComponent<RectTransform>().anchoredPosition = npcStartPos.GetComponent<RectTransform>().localPosition;

@@ -1,12 +1,12 @@
 //Character,// Line,// Time To Next,// Branch
-Red,Testing,2,n
-Blue,One two three,2,n
-Green,Check check check,2,n
+Mystic,Testing,2,n
+Loveable,One two three,2,n
+Veteran,Check check check,2,n
 Player,Y'all this is fine,0,11
-Blue,One two three,1,n
-Green,Check check check,3,n
-Red,We'll be doing this forever,2,n
-green,And ever,1,n
-blue,AND EVER,1,n
-purple,Last test before a loop!!,1,0
-ORANGE, we see this line if we hit the button!,3,0
+Nerd,One two three FOUR,1,n
+C.O.,Check check check VVVV,3,n
+Sniper,We'll be doing this forever,2,n
+UWA,And ever,1,n
+Medic,AND EVER,1,n
+Nerd,Last test before a loop!!,1,0
+Mystic, we see this line if we hit the button!,3,0
