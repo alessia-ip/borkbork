@@ -11,6 +11,7 @@ public class TestSpawn : MonoBehaviour
     public GameObject canv;
     public GameObject npcPrefab;
     public GameObject playerPrefab;
+    public GameObject playerButtonPrefab;
 
     public GameObject npcStartPos;
     public GameObject playerStartPos;
@@ -84,14 +85,65 @@ public class TestSpawn : MonoBehaviour
         {
             _str.lineNum = playerLineNum;
         }
-
-        playerBut.SetActive(false);
+        
+        ButtonRemoval();
+        //playerBut.SetActive(false);
+        
     }
     
     public void PlayerButton(string PlayerText)
     {
-        playerBut.SetActive(true);
-        playerBut.GetComponentInChildren<TMP_Text>().text = PlayerText;
+        
+        if (allDialogue.Count > 0)
+        {
+            for(int i = 0; i < allDialogue.Count; i++)
+            {
+                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 110, 0);
+                allDialogue[i].GetComponent<RectTransform>().localPosition = newPos;
+            }
+
+            if (allDialogue.Count > 10)
+            {
+                var TBD = allDialogue[0];
+                allDialogue.RemoveAt(0);
+                Destroy(TBD);
+            }
+        }
+        
+        //playerBut.SetActive(true);
+        var newButton = Instantiate(playerButtonPrefab);
+        newButton.GetComponentInChildren<TMP_Text>().text = PlayerText;
+        newButton.transform.SetParent(canv.transform, false);
+        newButton.GetComponent<RectTransform>().anchoredPosition = playerStartPos.GetComponent<RectTransform>().localPosition;
+        allDialogue.Add(newButton);
+        playerBut = newButton;
+        
+    }
+    
+    public void ButtonRemoval()
+    {
+        
+        int NULLSPOT = 0;
+        
+        for (int i = 0; i < allDialogue.Count; i++)
+        {
+            if (allDialogue[i] == playerBut)
+            {
+                NULLSPOT = i;
+                allDialogue.RemoveAt(i);
+            }
+        }
+        
+        Destroy(playerBut);
+        
+        for (int i = 0; i < NULLSPOT; i++)
+        { 
+            var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition - new Vector3(0, 110, 0);
+            allDialogue[i].GetComponent<RectTransform>().localPosition = newPos;
+        }
+
+        
+        
     }
     
 }
