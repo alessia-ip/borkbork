@@ -81,17 +81,12 @@ public class TestSpawn : MonoBehaviour
         newBox.GetComponent<RectTransform>().anchoredPosition = playerStartPos.GetComponent<RectTransform>().localPosition;
         allDialogue.Add(newBox);
 
-        if (playerLineNum != -1)
-        {
-            _str.lineNum = playerLineNum;
-        }
-        
         ButtonRemoval();
         //playerBut.SetActive(false);
         
     }
     
-    public void PlayerButton(string PlayerText)
+    public void PlayerButton(string PlayerText, string NewBlock)
     {
         
         if (allDialogue.Count > 0)
@@ -113,6 +108,7 @@ public class TestSpawn : MonoBehaviour
         //playerBut.SetActive(true);
         var newButton = Instantiate(playerButtonPrefab);
         newButton.GetComponentInChildren<TMP_Text>().text = PlayerText;
+        newButton.GetComponent<HideSelf>().nextBlock = NewBlock;
         newButton.transform.SetParent(canv.transform, false);
         newButton.GetComponent<RectTransform>().anchoredPosition = playerStartPos.GetComponent<RectTransform>().localPosition;
         allDialogue.Add(newButton);

@@ -6,7 +6,8 @@ using System.IO;
 public class StringReader : MonoBehaviour
 {
     private string fullPath;
-    string filepath = "/Resources/TestSheet.csv";
+    public string filepath = "A1.csv";
+    private string folderPath = "/Resources/";
 
     public List<string> allDialogue;
 
@@ -17,12 +18,15 @@ public class StringReader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fullPath = Application.dataPath + filepath;
+        fullPath = Application.dataPath + folderPath + filepath;
         string[] final = File.ReadAllLines(fullPath);
         Debug.Log(final[0]);
         for (int i = 1; i < final.Length; i++)
         {
-            allDialogue.Add(final[i]);
+            if (!final[i].Contains("///"))
+            {
+                allDialogue.Add(final[i]);
+            }
         }
         
         NewLine();
@@ -33,12 +37,12 @@ public class StringReader : MonoBehaviour
     {
         
         var currentLine = allDialogue[lineNum];
-        string[] currentLineSplit = currentLine.Split(',');
-        if (currentLineSplit[0].ToUpper() == "PLAYER")
+        string[] currentLineSplit = currentLine.Split('|');
+        if (currentLineSplit[0].ToUpper().Replace(" ", "") == "PLAYER")
         {
-            _TestSpawn.PlayerButton(currentLineSplit[1]);
+            _TestSpawn.PlayerButton(currentLineSplit[1], currentLineSplit[3].Replace(" ",""));
 
-            _TestSpawn.playerLineNum = int.Parse(currentLineSplit[3]) - 1;
+            //_TestSpawn.playerLineNum = int.Parse(currentLineSplit[3]) - 1;
             
             lineNum++;
             
@@ -48,33 +52,55 @@ public class StringReader : MonoBehaviour
 
             Vector3 newCol = new Vector3(0, 0, 0);
 
-            switch (currentLineSplit[0])
+            switch (currentLineSplit[0].ToLower())
             {
-                case "Mystic":
+                case "mystic":
                     newCol = new Vector3(211, 162, 219);
                     break;
-                case "UWA":
+                case "uwa":
                     newCol = new Vector3(240, 169, 81);
                     break;
-                case "Loveable":
+                case "oorah":
+                    newCol = new Vector3(240, 169, 81);
+                    break;
+                case "loveable giant":
                     newCol = new Vector3(109, 154, 194);
                     break;
-                case "Veteran":
+                case "giant":
+                    newCol = new Vector3(109, 154, 194);
+                    break;
+                case "loveable":
+                    newCol = new Vector3(109, 154, 194);
+                    break;
+                case "veteran":
                     newCol = new Vector3(90, 95, 120);
                     break;
-                case "Nerd":
+                case "legacy":
+                    newCol = new Vector3(90, 95, 120);
+                    break;
+                case "nerd":
                     newCol = new Vector3(230, 30, 213);
                     break;
-                case "C.O.":
+                case "c.o.":
                     newCol = new Vector3(106, 158, 122);
                     break;
-                case "Sniper":
+                case "sniper":
                     newCol = new Vector3(53, 161, 130);
                     break;
-                case "Medic":
+                case "medic":
                     newCol = new Vector3(222, 57, 20);
                     break;
+                case "command":
+                    newCol = new Vector3(255, 255, 255);
+                    break;
+                case "connect":
+                    lineNum = 0;
+                    filepath = currentLineSplit[3].ToUpper() + ".csv";
+                    Debug.Log(filepath);
+                    parseNew();
+                    return;
                 default:
+                    newCol = new Vector3(255, 255, 255);
                     break;
             }
 
@@ -94,9 +120,33 @@ public class StringReader : MonoBehaviour
             
         }
 
-       
-        
-        Invoke(nameof(NewLine), int.Parse(currentLineSplit[2]));
 
+        if (currentLineSplit[2].Replace(" ", "") != "")
+        {
+            Invoke(nameof(NewLine), int.Parse(currentLineSplit[2].Replace(" ", "")));
+        }
+        else
+        {
+            Invoke(nameof(NewLine), 2);
+        }
+        
     }
+
+    public void parseNew()
+    {
+        allDialogue.Clear();
+        fullPath = Application.dataPath + folderPath + filepath;
+        string[] final = File.ReadAllLines(fullPath);
+        lineNum = 0; 
+        for (int i = 1; i < final.Length; i++)
+        {
+            if (!final[i].Contains("///"))
+            {
+                allDialogue.Add(final[i]);
+            }
+        }
+        
+        NewLine();
+    }
+    
 }

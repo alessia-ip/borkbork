@@ -1,0 +1,18 @@
+///Dropship Chatter|||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)
+Command|Red Team, you are less than a klik from the LZ.||
+oorah|Cracking skulls, boys! Oorah!||
+C.O.|Hold together, lads, and naught shall defeat us.||
+mystic|Oh god, oh fuck, oh god, oh fuck.|1|
+sniper|Heheheheh. |1|
+medic|Lambs to the slaughter.|1|
+mystic|Oh fuck, oh god, oh fuck, oh god.|1|
+giant|Stick together and we'll be fine.||
+legacy|I've been looking forward to this. ||
+Command|Red team, you are 500 meters from drop.||
+oorah|Yes! Let's go! Jellies get fucked!||
+mystic|This is it. This is how I die.||
+C.O.|As I said, lad, keep formation and we'll pull through.||
+Player|Get ready, everyone. ||A2-1
+Command|Red team, you are 250 meters from drop.||
+Connect|||A2-2
