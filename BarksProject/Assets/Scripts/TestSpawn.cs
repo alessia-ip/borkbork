@@ -26,13 +26,13 @@ public class TestSpawn : MonoBehaviour
     
     // Start is called before the first frame update
 
-    public void SpawnNew(string newLine, Color bgCol, AudioClip clip)
+    public void SpawnNew(string newLine, Color bgCol, AudioClip clip, string charName)
     {
         if (allDialogue.Count > 0)
         {
             for(int i = 0; i < allDialogue.Count; i++)
             {
-                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 110, 0);
+                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 160, 0);
                 allDialogue[i].GetComponent<RectTransform>().localPosition = newPos;
             }
 
@@ -47,6 +47,10 @@ public class TestSpawn : MonoBehaviour
         var newBox = Instantiate(npcPrefab);
         newBox.GetComponent<Image>().color = bgCol;
         newBox.GetComponentInChildren<TMP_Text>().text = newLine;
+
+        var child = newBox.transform.GetChild(0);
+        child.transform.GetChild(0).GetComponent<TMP_Text>().text = charName;
+        
         newBox.transform.SetParent(canv.transform, false); 
         newBox.GetComponent<RectTransform>().anchoredPosition = npcStartPos.GetComponent<RectTransform>().localPosition;
         newBox.GetComponent<AudioSource>().PlayOneShot(clip);
@@ -64,7 +68,7 @@ public class TestSpawn : MonoBehaviour
         {
             for(int i = 0; i < allDialogue.Count; i++)
             {
-                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 110, 0);
+                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 160, 0);
                 allDialogue[i].GetComponent<RectTransform>().localPosition = newPos;
             }
 
@@ -94,7 +98,7 @@ public class TestSpawn : MonoBehaviour
         {
             for(int i = 0; i < allDialogue.Count; i++)
             {
-                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 110, 0);
+                var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition + new Vector3(0, 160, 0);
                 allDialogue[i].GetComponent<RectTransform>().localPosition = newPos;
             }
 
@@ -135,7 +139,7 @@ public class TestSpawn : MonoBehaviour
         
         for (int i = 0; i < NULLSPOT; i++)
         { 
-            var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition - new Vector3(0, 110, 0);
+            var newPos = allDialogue[i].GetComponent<RectTransform>().localPosition - new Vector3(0, 160, 0);
             allDialogue[i].GetComponent<RectTransform>().localPosition = newPos;
         }
 

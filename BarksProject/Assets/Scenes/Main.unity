@@ -308,12 +308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e55f2ddc221fd43e98d485c861a429c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filepath: A1.csv
+  filepath: A1
   allDialogue: []
   lineNum: 0
   _TestSpawn: {fileID: 1287052434}
   mysticAud: {fileID: 8300000, guid: 919f7fb0f3e8a42c7a70560e8426712a, type: 3}
-  veteranAud: {fileID: 8300000, guid: c41f5daf692cf4b67af77ea51055cad1, type: 3}
+  legacyAud: {fileID: 8300000, guid: c41f5daf692cf4b67af77ea51055cad1, type: 3}
   giantAud: {fileID: 8300000, guid: 1ef670a2b43164967901ae2b930516b4, type: 3}
   coAud: {fileID: 8300000, guid: f95ead85b57d74e07b85908ef53ec3cc, type: 3}
   sniperAud: {fileID: 8300000, guid: 2de90605d967745d8960bd0222158c29, type: 3}
