@@ -26,7 +26,7 @@ public class TestSpawn : MonoBehaviour
     
     // Start is called before the first frame update
 
-    public void SpawnNew(string newLine, Color bgCol)
+    public void SpawnNew(string newLine, Color bgCol, AudioClip clip)
     {
         if (allDialogue.Count > 0)
         {
@@ -49,6 +49,7 @@ public class TestSpawn : MonoBehaviour
         newBox.GetComponentInChildren<TMP_Text>().text = newLine;
         newBox.transform.SetParent(canv.transform, false); 
         newBox.GetComponent<RectTransform>().anchoredPosition = npcStartPos.GetComponent<RectTransform>().localPosition;
+        newBox.GetComponent<AudioSource>().PlayOneShot(clip);
         allDialogue.Add(newBox);
    
         
