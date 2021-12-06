@@ -33,7 +33,7 @@ public class HideSelf : MonoBehaviour
 
         if (nextBlock != "")
         {
-            manager.GetComponent<StringReader>().filepath = nextBlock + ".csv";
+            manager.GetComponent<StringReader>().filepath = nextBlock;
             manager.GetComponent<StringReader>().CancelInvoke("NewLine");
             manager.GetComponent<StringReader>().parseNew();
         }

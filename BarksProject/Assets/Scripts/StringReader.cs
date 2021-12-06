@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
@@ -54,12 +56,26 @@ public class StringReader : MonoBehaviour
 
     public void NewLine()
     {
-        
         var currentLine = allDialogue[lineNum];
         string[] currentLineSplit = currentLine.Split('|');
         if (currentLineSplit[0].ToUpper().Replace(" ", "") == "PLAYER")
         {
-            _TestSpawn.PlayerButton(currentLineSplit[1], currentLineSplit[3].Replace(" ",""));
+            int timerVal = 0;
+            var timerInt = int.TryParse(currentLineSplit[2], out int result);
+            
+            if (timerInt)
+            {
+                timerVal = int.Parse(currentLineSplit[2]);
+            }
+            else
+            {
+                timerVal = 10;
+            }
+            
+            _TestSpawn.PlayerButton(currentLineSplit[1], 
+                currentLineSplit[3].Replace(" ",""),
+                timerVal
+            );
 
             //_TestSpawn.playerLineNum = int.Parse(currentLineSplit[3]) - 1;
             
@@ -151,7 +167,7 @@ public class StringReader : MonoBehaviour
                     break;
                 case "connect":
                     lineNum = 0;
-                    filepath = currentLineSplit[3].ToUpper() + ".csv";
+                    filepath = currentLineSplit[3].ToUpper();
                     Debug.Log(filepath);
                     parseNew();
                     return;

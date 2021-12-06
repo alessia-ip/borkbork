@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Build.Player;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -91,7 +92,7 @@ public class TestSpawn : MonoBehaviour
         
     }
     
-    public void PlayerButton(string PlayerText, string NewBlock)
+    public void PlayerButton(string PlayerText, string NewBlock, float timerAmt)
     {
         
         if (allDialogue.Count > 0)
@@ -114,6 +115,8 @@ public class TestSpawn : MonoBehaviour
         var newButton = Instantiate(playerButtonPrefab);
         newButton.GetComponentInChildren<TMP_Text>().text = PlayerText;
         newButton.GetComponent<HideSelf>().nextBlock = NewBlock;
+        newButton.GetComponent<HideSelf>().amountOfTotalTime = (int)timerAmt;
+        newButton.GetComponent<HideSelf>().amountOfTime = timerAmt;
         newButton.transform.SetParent(canv.transform, false);
         newButton.GetComponent<RectTransform>().anchoredPosition = playerStartPos.GetComponent<RectTransform>().localPosition;
         allDialogue.Add(newButton);
