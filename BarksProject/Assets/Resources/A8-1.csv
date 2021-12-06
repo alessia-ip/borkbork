@@ -1,0 +1,22 @@
+///Team Insists You Move|||
+///Character|Line||
+Nerd|According to my calculations, we have a 61.8925% chance of surviving this.||
+Aloof sniper|I'll take those odds.||
+Medic|We need a medic over here!||
+C.O.|You are the medical officer on duty!||
+Medic|Yes, but I'm not paid enough for this shit either way.||
+Player|Everyone move! Form up on your positions!|4|B1-1
+Player|Hold your position.|10|
+Nerd|According to my calculations, we now have a 50.03765% chance of surviving this.||
+Legacy soldier|You might as well flip a damn coin.||
+Player|Well, flip the coin!|10|A8-2
+///|THINGS THE COIN FLIP CAN INTERUPT ||
+Mystic|A coin flip chances the fates|2|
+Legacy soldier|Nobody is flipping anything.|1|
+UWA~!|Can I flip off the jellies?|3|
+Legacy soldier|... fine. We are flipping ONE thing. |1|
+The loveable giant|Technically, there are a lot more than one jelly. |2|
+C.O.|Jolly good count of the jellies, chap!. ||
+UWA~!|Don't matter how many there are, we can take 'em no matter what!||
+///|END INTERUPTABLE STUFF||
+Connect|||A8-3

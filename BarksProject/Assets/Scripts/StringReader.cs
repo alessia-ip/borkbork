@@ -50,7 +50,7 @@ public class StringReader : MonoBehaviour
             }
         }
         
-        NewLine();
+        Invoke(nameof(NewLine), 1.5f);
         
     }
 
@@ -106,7 +106,17 @@ public class StringReader : MonoBehaviour
                     newCharClip = uwaAud;
                     cName = "Tomato";
                     break;
+                case "uwa~!":
+                    newCol = new Vector3(240, 169, 81);
+                    newCharClip = uwaAud;
+                    cName = "Tomato";
+                    break;
                 case "loveable giant":
+                    newCol = new Vector3(109, 154, 194);
+                    newCharClip = giantAud;
+                    cName = "Carmine";
+                    break;
+                case "the loveable giant":
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
@@ -122,6 +132,11 @@ public class StringReader : MonoBehaviour
                     cName = "Carmine";
                     break;
                 case "legacy":
+                    newCol = new Vector3(90, 95, 120);
+                    newCharClip = legacyAud;
+                    cName = "Tyrian";
+                    break;
+                case "legacy soldier":
                     newCol = new Vector3(90, 95, 120);
                     newCharClip = legacyAud;
                     cName = "Tyrian";
@@ -193,13 +208,17 @@ public class StringReader : MonoBehaviour
         }
 
 
-        if (currentLineSplit[2].Replace(" ", "") != "")
+        if (currentLineSplit[2].Replace(" ", "") != "" && 
+            currentLineSplit[0].ToUpper().Replace(" ", "") != "PLAYER")
         {
             Invoke(nameof(NewLine), int.Parse(currentLineSplit[2].Replace(" ", "")));
+        } else if (currentLineSplit[0].ToUpper().Replace(" ", "") == "PLAYER")
+        {
+            Invoke(nameof(NewLine), 0.4f);
         }
         else
         {
-            Invoke(nameof(NewLine), 2);
+            Invoke(nameof(NewLine), 1.5f);
         }
         
     }
