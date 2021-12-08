@@ -47,14 +47,28 @@ public class TestSpawn : MonoBehaviour
         
         var newBox = Instantiate(npcPrefab);
         newBox.GetComponent<Image>().color = bgCol;
-        newBox.GetComponentInChildren<TMP_Text>().text = newLine;
 
-        var child = newBox.transform.GetChild(0);
-        child.transform.GetChild(0).GetComponent<TMP_Text>().text = charName;
+        var newText = "";
+        if (charName.Replace(" ", "") != "")
+        {
+            newText = "<b>" + charName + "</b>" + ": " + newLine;
+        }
+        else
+        {
+            newText = newLine + "\n<i>---Command</i>";
+        }
+        newBox.GetComponentInChildren<TMP_Text>().text = newText;
+
+        newBox.GetComponentInChildren<TW_MultiStrings_RandomPointer>().audClip = clip;
+
+        /*var child = newBox.transform.GetChild(0);
+        child.transform.GetChild(0).GetComponent<TMP_Text>().text = charName;*/
         
         newBox.transform.SetParent(canv.transform, false); 
         newBox.GetComponent<RectTransform>().anchoredPosition = npcStartPos.GetComponent<RectTransform>().localPosition;
-        newBox.GetComponent<AudioSource>().PlayOneShot(clip);
+        
+        //newBox.GetComponent<AudioSource>().PlayOneShot(clip);
+        //old audio input
         allDialogue.Add(newBox);
    
         

@@ -28,13 +28,19 @@ public class StringReader : MonoBehaviour
     public AudioClip nerdAud;
     public AudioClip uwaAud;
     public AudioClip defaultAud;
+
+    private bool mysticAlive = true;
+    private bool legacyAlive = true;
+    private bool giantAlive = true; 
+    private bool coAlive = true;
+    private bool medicAlive = true;
+    private bool uwaAlive = true;
+    private bool sniperAlive = true;
+    private bool nerdAlive = true;
     
     // Start is called before the first frame update
     void Start()
     {
-        
-        
-        
         /*fullPath = Application.dataPath + folderPath + filepath;
         string[] final = File.ReadAllLines(fullPath);
         Debug.Log(final[0]);*/
@@ -92,86 +98,188 @@ public class StringReader : MonoBehaviour
             switch (currentLineSplit[0].ToLower())
             {
                 case "mystic":
+                    if (!mysticAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(211, 162, 219);
                     newCharClip = mysticAud;
                     cName = "Cardinal";
                     break;
                 case "uwa":
+                    if (!uwaAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(240, 169, 81);
                     newCharClip = uwaAud;
                     cName = "Tomato";
                     break;
                 case "oorah":
+                    if (!uwaAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(240, 169, 81);
                     newCharClip = uwaAud;
                     cName = "Tomato";
                     break;
                 case "uwa~!":
+                    if (!uwaAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(240, 169, 81);
                     newCharClip = uwaAud;
                     cName = "Tomato";
                     break;
                 case "loveable giant":
+                    if (!giantAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
                     break;
                 case "the loveable giant":
+                    if (!giantAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
                     break;
                 case "giant":
+                    if (!giantAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
                     break;
                 case "loveable":
+                    if (!giantAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
                     break;
                 case "legacy":
+                    if (!legacyAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(90, 95, 120);
                     newCharClip = legacyAud;
                     cName = "Tyrian";
                     break;
                 case "legacy soldier":
+                    if (!legacyAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(90, 95, 120);
                     newCharClip = legacyAud;
                     cName = "Tyrian";
                     break;
                 case "nerd":
+                    if (!nerdAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(230, 30, 213);
                     newCharClip = nerdAud;
                     cName = "Turkey";
                     break;
                 case "c.o.":
+                    if (!coAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(200, 204, 171);
                     newCharClip = coAud;
                     cName = "Crimson";
                     break;
                 case "sniper":
+                    if (!sniperAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(53, 161, 130);
                     newCharClip = sniperAud;
                     cName = "Scarlet";
                     break;
                 case "aloof":
+                    if (!sniperAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(53, 161, 130);
                     newCharClip = sniperAud;
                     cName = "Scarlet";
                     break;
                 case "aloof sniper":
+                    if (!sniperAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(53, 161, 130);
                     newCharClip = sniperAud;
                     cName = "Scarlet";
                     break;
                 case "medic":
+                    if (!medicAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(222, 57, 20);
                     newCharClip = medicAud;
                     cName = "Sanguine";
                     break;
                 case "veteran":
+                    if (!sniperAlive)
+                    {
+                        lineNum++;
+                        Invoke(nameof(NewLine), 0.1f);
+                        return;
+                    }
                     newCol = new Vector3(222, 57, 20);
                     newCharClip = medicAud;
                     cName = "Sanguine";
@@ -194,16 +302,7 @@ public class StringReader : MonoBehaviour
             var col = new Color(newCol.x/255.0F,newCol.y/255.0F,newCol.z/255.0F);
 
             _TestSpawn.SpawnNew(currentLineSplit[1], col, newCharClip, cName);
-            
-            if (int.TryParse(currentLineSplit[3], out int result))
-            {
-                Debug.Log("New Line Move!" + result);
-                lineNum = result;
-            }
-            else
-            {
-                lineNum++;
-            }
+            lineNum++;
             
         }
 
@@ -218,7 +317,7 @@ public class StringReader : MonoBehaviour
         }
         else
         {
-            Invoke(nameof(NewLine), 1.5f);
+            Invoke(nameof(NewLine), 2f);
         }
         
     }
@@ -241,7 +340,7 @@ public class StringReader : MonoBehaviour
             }
         }
         
-        Invoke(nameof(NewLine), 2);
+        Invoke(nameof(NewLine), 1);
     }
     
 }
