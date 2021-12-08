@@ -1,0 +1,15 @@
+///Lads Hate The Valley||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+mystic|The soul withers as we trudge onwards.|||
+nerd|The temperatures continue to rise to hazardous levels, so I hypothesize if we continue at this pace, we will continue to lose our equipments' function, and possibly our lives. |1||
+oorah|I ain't dying in this pit!|||
+legacy|I want this valley turned to ash.|||
+Player|We have to press forward or we'll get caught in the attack!|||
+giant|I'll fan you guys with my hands!|||
+C.O.|At this rate, we're toast...literally.|||
+sniper|Can't get high ground here.|||
+Player|Just a little bit further!|4|D3|
+medic|This planet is such shit.|1||
+C.O.|Will this valley never end?|3||
+sniper|Looks like an exit is up ahead, idiots.|1||
+Connect|||D3|

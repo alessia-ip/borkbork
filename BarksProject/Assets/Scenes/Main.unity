@@ -748,13 +748,13 @@ MonoBehaviour:
   lineNum: 0
   _TestSpawn: {fileID: 1287052434}
   mysticAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  legacyAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  giantAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  coAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  sniperAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  medicAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  nerdAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
-  uwaAud: {fileID: 8300000, guid: 7f6d8cb2eb09042499d28189f89fca26, type: 3}
+  legacyAud: {fileID: 8300000, guid: 5ee7c48730e0d46d78ff44c7fb3b468e, type: 3}
+  giantAud: {fileID: 8300000, guid: 3de123038d0014a5887e03fb8a28b6dd, type: 3}
+  coAud: {fileID: 8300000, guid: 6cb47e5e864a34e7ab6fcc26f6c1a810, type: 3}
+  sniperAud: {fileID: 8300000, guid: 950b5a20c62964b28a3e213e9ca6bca9, type: 3}
+  medicAud: {fileID: 8300000, guid: a2abbf0d05afb4dbe8426de83f39aabc, type: 3}
+  nerdAud: {fileID: 8300000, guid: dc96e8e38ab2f41d183bc8fa7fd27899, type: 3}
+  uwaAud: {fileID: 8300000, guid: eb38096d21c324babaa0d2aa7f14295a, type: 3}
   defaultAud: {fileID: 8300000, guid: 5ed9a2b350ba44bb2a92cdab0a3ec177, type: 3}
 --- !u!1 &1458689493
 GameObject:

@@ -1,9 +1,8 @@
-using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class StringReader : MonoBehaviour
@@ -107,6 +106,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(211, 162, 219);
                     newCharClip = mysticAud;
                     cName = "Cardinal";
+                    if (filepath.Contains("X"))
+                    {
+                        mysticAlive = !mysticAlive;
+                    }
                     break;
                 case "uwa":
                     if (!uwaAlive)
@@ -118,6 +121,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(240, 169, 81);
                     newCharClip = uwaAud;
                     cName = "Tomato";
+                    if (filepath.Contains("X"))
+                    {
+                        uwaAlive = !uwaAlive;
+                    }
                     break;
                 case "oorah":
                     if (!uwaAlive)
@@ -129,6 +136,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(240, 169, 81);
                     newCharClip = uwaAud;
                     cName = "Tomato";
+                    if (filepath.Contains("X"))
+                    {
+                        uwaAlive = !uwaAlive;
+                    }
                     break;
                 case "uwa~!":
                     if (!uwaAlive)
@@ -140,6 +151,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(240, 169, 81);
                     newCharClip = uwaAud;
                     cName = "Tomato";
+                    if (filepath.Contains("X"))
+                    {
+                        uwaAlive = !uwaAlive;
+                    }
                     break;
                 case "loveable giant":
                     if (!giantAlive)
@@ -151,6 +166,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
+                    if (filepath.Contains("X"))
+                    {
+                        giantAlive = !giantAlive;
+                    }
                     break;
                 case "the loveable giant":
                     if (!giantAlive)
@@ -162,6 +181,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
+                    if (filepath.Contains("X"))
+                    {
+                        giantAlive = !giantAlive;
+                    }
                     break;
                 case "giant":
                     if (!giantAlive)
@@ -173,6 +196,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
+                    if (filepath.Contains("X"))
+                    {
+                        giantAlive = !giantAlive;
+                    }
                     break;
                 case "loveable":
                     if (!giantAlive)
@@ -184,6 +211,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(109, 154, 194);
                     newCharClip = giantAud;
                     cName = "Carmine";
+                    if (filepath.Contains("X"))
+                    {
+                        giantAlive = !giantAlive;
+                    }
                     break;
                 case "legacy":
                     if (!legacyAlive)
@@ -195,6 +226,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(90, 95, 120);
                     newCharClip = legacyAud;
                     cName = "Tyrian";
+                    if (filepath.Contains("X"))
+                    {
+                        legacyAlive = !legacyAlive;
+                    }
                     break;
                 case "legacy soldier":
                     if (!legacyAlive)
@@ -206,6 +241,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(90, 95, 120);
                     newCharClip = legacyAud;
                     cName = "Tyrian";
+                    if (filepath.Contains("X"))
+                    {
+                        legacyAlive = !legacyAlive;
+                    }
                     break;
                 case "nerd":
                     if (!nerdAlive)
@@ -217,6 +256,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(230, 30, 213);
                     newCharClip = nerdAud;
                     cName = "Turkey";
+                    if (filepath.Contains("X"))
+                    {
+                        nerdAlive = !nerdAlive;
+                    }
                     break;
                 case "c.o.":
                     if (!coAlive)
@@ -228,6 +271,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(200, 204, 171);
                     newCharClip = coAud;
                     cName = "Crimson";
+                    if (filepath.Contains("X"))
+                    {
+                        coAlive = !coAlive;
+                    }
                     break;
                 case "sniper":
                     if (!sniperAlive)
@@ -239,6 +286,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(53, 161, 130);
                     newCharClip = sniperAud;
                     cName = "Scarlet";
+                    if (filepath.Contains("X"))
+                    {
+                        sniperAlive = !sniperAlive;
+                    }
                     break;
                 case "aloof":
                     if (!sniperAlive)
@@ -250,6 +301,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(53, 161, 130);
                     newCharClip = sniperAud;
                     cName = "Scarlet";
+                    if (filepath.Contains("X"))
+                    {
+                        sniperAlive = !sniperAlive;
+                    }
                     break;
                 case "aloof sniper":
                     if (!sniperAlive)
@@ -261,6 +316,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(53, 161, 130);
                     newCharClip = sniperAud;
                     cName = "Scarlet";
+                    if (filepath.Contains("X"))
+                    {
+                        sniperAlive = !sniperAlive;
+                    }
                     break;
                 case "medic":
                     if (!medicAlive)
@@ -272,6 +331,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(222, 57, 20);
                     newCharClip = medicAud;
                     cName = "Sanguine";
+                    if (filepath.Contains("X"))
+                    {
+                        medicAlive = !medicAlive;
+                    }
                     break;
                 case "veteran":
                     if (!sniperAlive)
@@ -283,6 +346,10 @@ public class StringReader : MonoBehaviour
                     newCol = new Vector3(222, 57, 20);
                     newCharClip = medicAud;
                     cName = "Sanguine";
+                    if (filepath.Contains("X"))
+                    {
+                        sniperAlive = !sniperAlive;
+                    }
                     break;
                 case "command":
                     newCol = new Vector3(255, 255, 255);
@@ -306,6 +373,10 @@ public class StringReader : MonoBehaviour
             
         }
 
+        if (filepath.Contains("X"))
+        {
+            lineNum = allDialogue.Count-1;
+        }
 
         if (currentLineSplit[2].Replace(" ", "") != "" && 
             currentLineSplit[0].ToUpper().Replace(" ", "") != "PLAYER")
@@ -324,6 +395,16 @@ public class StringReader : MonoBehaviour
 
     public void parseNew()
     {
+        if (filepath.Contains("E"))
+        {
+            SceneManager.LoadScene(2);
+        }
+        
+        if (filepath.Contains("Y"))
+        {
+            SceneManager.LoadScene(3);
+        }
+        
         allDialogue.Clear();
         /*fullPath = Application.dataPath + folderPath + filepath;
         string[] final = File.ReadAllLines(fullPath);*/
@@ -338,6 +419,12 @@ public class StringReader : MonoBehaviour
             {
                 allDialogue.Add(final[i]);
             }
+        }
+
+        if (filepath.Contains("X"))
+        {
+            var randNum = Random.Range(0, allDialogue.Count - 2);
+            lineNum = randNum;
         }
         
         Invoke(nameof(NewLine), 1);

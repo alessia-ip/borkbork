@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: aa6f298f94bd14822a3ca8fa323183cf
+  - enabled: 1
+    path: Assets/Scenes/TPK.unity
+    guid: 5218191a025354e4c97319fb40a08f85
   m_configObjects: {}

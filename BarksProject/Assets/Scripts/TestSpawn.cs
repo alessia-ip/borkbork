@@ -55,7 +55,7 @@ public class TestSpawn : MonoBehaviour
         }
         else
         {
-            newText = newLine + "\n<i>---Command</i>";
+            newText = newLine;
         }
         newBox.GetComponentInChildren<TMP_Text>().text = newText;
 

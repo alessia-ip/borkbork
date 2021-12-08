@@ -1,0 +1,12 @@
+///Ambush from Jellybeast||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+nerd|We got something on the sensors!|||
+C.O.|By Jove! What is that?! |1||
+sniper|Don't let it outta your sights.|1||
+medic|We're eating jelly tonight, lads!|||
+mystic|We can't fight this thing!|||
+Player|Do not engage it!|6|D4-1|
+legacy|That's the largest jelly I've ever seen!|3||
+oorah|Big boy spotted!|3||
+giant|I'm not dying today!|||
+Connect|||D4-2|
