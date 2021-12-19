@@ -9,6 +9,10 @@ using UnityEngine.UI;
 public class TestSpawn : MonoBehaviour
 {
 
+    //test spawn became the actual spawn file
+    //i also added a music tidbit to TW_Multistrings asset so that we got the beeping SFX
+    
+    
     public GameObject canv;
     public GameObject npcPrefab;
     public GameObject playerPrefab;
@@ -25,10 +29,13 @@ public class TestSpawn : MonoBehaviour
     public int playerLineNum;
     public StringReader _str;
     
-    // Start is called before the first frame update
-
+   
+//This is called to spawn new NPC text
+//we get all the info we need when we call the function
     public void SpawnNew(string newLine, Color bgCol, AudioClip clip, string charName)
     {
+        
+        //we have to bump all the other dialogue up the screen, and delete anything off screen to avoid lag
         if (allDialogue.Count > 0)
         {
             for(int i = 0; i < allDialogue.Count; i++)
@@ -45,12 +52,16 @@ public class TestSpawn : MonoBehaviour
             }
         }
         
+        //now we instantiate the new text!
+        //we also prepend the character's name to the front
+        //and we change the text box color
         var newBox = Instantiate(npcPrefab);
         newBox.GetComponent<Image>().color = bgCol;
 
         var newText = "";
         if (charName.Replace(" ", "") != "")
         {
+            //this is just some text formatting. 
             newText = "<b>" + charName + "</b>" + ": " + newLine;
         }
         else
@@ -64,6 +75,7 @@ public class TestSpawn : MonoBehaviour
         /*var child = newBox.transform.GetChild(0);
         child.transform.GetChild(0).GetComponent<TMP_Text>().text = charName;*/
         
+        //we do some funny position stuff so it shows up in the right spot
         newBox.transform.SetParent(canv.transform, false); 
         newBox.GetComponent<RectTransform>().anchoredPosition = npcStartPos.GetComponent<RectTransform>().localPosition;
         
@@ -76,6 +88,7 @@ public class TestSpawn : MonoBehaviour
         
     }
 
+    //spawn player text works pretty similar to spawn NPC text - just it happens when pressing the button. 
     public void SpawnPlayerText()
     {
         

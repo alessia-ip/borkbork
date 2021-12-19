@@ -7,6 +7,9 @@ using UnityEngine.Serialization;
 
 public class StringReader : MonoBehaviour
 {
+    //this file is for parsing all of the game's dialogue
+    
+    
     private string fullPath;
     public string filepath = "A1.csv";
     private string folderPath = "/Resources/";
@@ -18,6 +21,7 @@ public class StringReader : MonoBehaviour
     public TestSpawn _TestSpawn;
 
 
+    //here are each character's audio clips
     public AudioClip mysticAud;
     [FormerlySerializedAs("veteranAud")] public AudioClip legacyAud;
     public AudioClip giantAud;
@@ -28,6 +32,8 @@ public class StringReader : MonoBehaviour
     public AudioClip uwaAud;
     public AudioClip defaultAud;
 
+    
+    //we want to keep track of who is alive and who isn't
     private bool mysticAlive = true;
     private bool legacyAlive = true;
     private bool giantAlive = true; 
@@ -44,6 +50,7 @@ public class StringReader : MonoBehaviour
         string[] final = File.ReadAllLines(fullPath);
         Debug.Log(final[0]);*/
         
+        //this is when we grab the text for the first time
         TextAsset txt = Resources.Load<TextAsset>(filepath);
         string[] final = txt.text.Split('\n');
 
@@ -55,14 +62,18 @@ public class StringReader : MonoBehaviour
             }
         }
         
+        //we start invoking the print lines
         Invoke(nameof(NewLine), 1.5f);
         
     }
 
     public void NewLine()
     {
+        //we get the current line from our parsed list and break it up into segments
         var currentLine = allDialogue[lineNum];
         string[] currentLineSplit = currentLine.Split('|');
+        
+        //if the line's character is the player, we want to execute this bit
         if (currentLineSplit[0].ToUpper().Replace(" ", "") == "PLAYER")
         {
             int timerVal = 0;
@@ -77,6 +88,8 @@ public class StringReader : MonoBehaviour
                 timerVal = 10;
             }
             
+            //we want to spawn a button with these parameters we've parsed out
+            //all spawning is handled in testspawn (which started out as a test script)
             _TestSpawn.PlayerButton(currentLineSplit[1], 
                 currentLineSplit[3].Replace(" ",""),
                 timerVal
@@ -84,16 +97,21 @@ public class StringReader : MonoBehaviour
 
             //_TestSpawn.playerLineNum = int.Parse(currentLineSplit[3]) - 1;
             
+            //always increment the line count to the next line
             lineNum++;
             
         }
-        else
+        else //otherwise we know it's an NPC!
         {
 
             Vector3 newCol = new Vector3(0, 0, 0);
             AudioClip newCharClip = defaultAud;
             var cName = "";
 
+            //we switch on what character we're getting from the file
+            //we assign a color, and an audio clip, per character
+            //we also ignore this and go immediately to the next line if the character is dead
+            //some of these are duplicates to catch different ways the character's name may be written in the CSV files
             switch (currentLineSplit[0].ToLower())
             {
                 case "mystic":
@@ -373,12 +391,16 @@ public class StringReader : MonoBehaviour
             
         }
 
+        //if this is a death file, marked with X, we want to immediately go to the next file
         if (filepath.Contains("X"))
         {
             Debug.Log(lineNum + ":NUM");
             lineNum = allDialogue.Count-1;
         }
 
+        //here we know when to invoke the next print line
+        //it's either based on the amount of time set in the excel file
+        //but if there's no input, then we also set the default here
         if (currentLineSplit[2].Replace(" ", "") != "" && 
             currentLineSplit[0].ToUpper().Replace(" ", "") != "PLAYER")
         {
@@ -396,27 +418,32 @@ public class StringReader : MonoBehaviour
 
     public void parseNew()
     {
+        
+        //we load the end scene if we're ever asked to parse a file with the letter E
         if (filepath.Contains("E"))
         {
             SceneManager.LoadScene(3);
             return;
         }
         
+        //we load the DEATH scene if we're ever asked to parse a file with the letter Y
         if (filepath.Contains("Y"))
         {
             SceneManager.LoadScene(4);
             return;
         }
         
-        
-        
+        //we get rid of all the old dialogue from the list
         allDialogue.Clear();
         /*fullPath = Application.dataPath + folderPath + filepath;
         string[] final = File.ReadAllLines(fullPath);*/
         
+        //now we grab the new file
         TextAsset txt = Resources.Load<TextAsset>(filepath);
         string[] final = txt.text.Split('\n');
         
+        //and we parse it
+        //we ignore certain lines that were written in for our benefit, like titles
         lineNum = 0; 
         for (int i = 1; i < final.Length; i++)
         {
@@ -426,6 +453,8 @@ public class StringReader : MonoBehaviour
             }
         }
 
+        //if it's a death file, we only want ONE line. 
+        //and we don't want the same character to die twice, so we do some stuff here
         if (filepath.Contains("X"))
         {
             for (int i = 0; i < allDialogue.Count - 1; i++)
@@ -559,6 +588,7 @@ public class StringReader : MonoBehaviour
             lineNum = randNum;
         }
         
+        //then we print the new line again
         Invoke(nameof(NewLine), 1);
     }
     

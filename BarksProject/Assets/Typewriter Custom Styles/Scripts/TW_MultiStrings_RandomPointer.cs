@@ -144,9 +144,10 @@ public class TW_MultiStrings_RandomPointer : MonoBehaviour {
         if (сharIndex != ORIGINAL.Length + 1)
         {
             //play audio here
-            if (сharIndex % 2 == 0)
+            //I added this bit myself :) 
+            if (сharIndex % 3 == 0)
             {
-                aud.PlayOneShot(audClip, 0.3f);
+                aud.PlayOneShot(audClip, 0.2f);
             }
             string emptyString = new string(' ', ORIGINAL.Length - 1);
             string TEXT = ORIGINAL.Substring(0, сharIndex) + RandomChar(ORIGINAL, сharIndex);
