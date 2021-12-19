@@ -96,7 +96,7 @@ public class TestSpawn : MonoBehaviour
         }
         
         var newBox = Instantiate(playerPrefab);
-        newBox.GetComponentInChildren<TMP_Text>().text = playerBut.GetComponentInChildren<TMP_Text>().text;
+        newBox.GetComponentInChildren<TMP_Text>().text = "<b>Cinnabar:</b> " + playerBut.GetComponentInChildren<TMP_Text>().text;
         newBox.transform.SetParent(canv.transform, false);
         newBox.GetComponent<RectTransform>().anchoredPosition = playerStartPos.GetComponent<RectTransform>().localPosition;
         allDialogue.Add(newBox);

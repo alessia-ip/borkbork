@@ -375,6 +375,7 @@ public class StringReader : MonoBehaviour
 
         if (filepath.Contains("X"))
         {
+            Debug.Log(lineNum + ":NUM");
             lineNum = allDialogue.Count-1;
         }
 
@@ -397,12 +398,12 @@ public class StringReader : MonoBehaviour
     {
         if (filepath.Contains("E"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
         
         if (filepath.Contains("Y"))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
         
         allDialogue.Clear();
@@ -423,6 +424,133 @@ public class StringReader : MonoBehaviour
 
         if (filepath.Contains("X"))
         {
+            for (int i = 0; i < allDialogue.Count - 1; i++)
+            {
+                var CheckLineChar = allDialogue[i].Split('|')[0];
+                switch (CheckLineChar)
+                {
+                    case "mystic":
+                    if (!mysticAlive)
+                    {
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "uwa":
+                    if (!uwaAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "oorah":
+                    if (!uwaAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "uwa~!":
+                    if (!uwaAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "loveable giant":
+                    if (!giantAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "the loveable giant":
+                    if (!giantAlive)
+                    {
+
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "giant":
+                    if (!giantAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "loveable":
+                    if (!giantAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "legacy":
+                    if (!legacyAlive)
+                    {
+                        
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "legacy soldier":
+                    if (!legacyAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "nerd":
+                    if (!nerdAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "c.o.":
+                    if (!coAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "sniper":
+                    if (!sniperAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "aloof":
+                    if (!sniperAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "aloof sniper":
+                    if (!sniperAlive)
+                    {
+                        
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "medic":
+                    if (!medicAlive)
+                    {
+                       
+                        allDialogue[i] = "";
+                    }
+                    break;
+                case "veteran":
+                    if (!sniperAlive)
+                    {
+                        allDialogue[i] = "";
+                    }
+                    break;
+                }
+            }
+
+            allDialogue.RemoveAll(string.IsNullOrWhiteSpace);
+
             var randNum = Random.Range(0, allDialogue.Count - 2);
             lineNum = randNum;
         }
