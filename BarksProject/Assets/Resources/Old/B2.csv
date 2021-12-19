@@ -1,0 +1,9 @@
+///Push ahead w/ objective||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+oorah|Pew! Pew! Pew! We're Oscar Mike!|||
+medic|Shit, we're pinned down! Split up!|1||
+nerd|Gelatinous artillery is eviscerating us! We have to disperse, sir! |||
+sniper|Stay together! I have all the meat shields I need!|1||
+Player|Disperse!|4|B3|
+legacy|Let our fearless leader give the order!|5||
+Connect|Stick together!||B-4|

@@ -1,0 +1,40 @@
+///Team Insists You Move|||
+///Character|Line||
+Nerd|According to my calculations, we have a 61.8925% chance of surviving this.||
+Aloof sniper|I'll take those odds.||
+Medic|We need a medic over here!||
+C.O.|You are the medical officer on duty!||
+Medic|Yes, but I'm not paid enough for this shit either way.||
+Player|Everyone move! Form up on your positons!|–––> Go TO FORM UP|
+Player|Hold your position.|( CONT'D )|
+Nerd|According to my calculations, we now have a 50.03765% chance of surviving this.||
+Legacy soldier|You might as well flip a damn coin.||
+Player|Well, flip the coin!|( SPLIT )|
+|THINGS THE COIN FLIP CAN INTERUPT |IF COIN IS FLIPPED|
+Mystic|A coin flip chances the fates|UWA~!|I'll flip it!
+Legacy soldier|Nobody is flipping anything.|Aloof sniper|...
+UWA~!|Can I flip off the jellies?|Legacy soldier|... well?
+Legacy soldier|... fine. We are flipping ONE thing. |The loveable giant|... 
+The loveable giant|Technically, there are a lot more than one jelly. |C.O.|... 
+C.O.|Jolly good count of the jellies, chap!. |UWA~!|... it's tentacles
+UWA~!|Don't matter how many there are, we can take 'em no matter what!|Legacy soldier|Tails.
+|END INTERUPTABLE STUFF|Medic|What the fuck does that even mean?
+Aloof sniper|They'll all meet their end in the sights of my scope.|Nerd|According to my calculations, we now have a-
+Mystic|Is that not how we all meet our ends? For all we not all fixed in the scope of life?|Legacy soldier, Medic|Shut up! / Can it pointdexter.
+Medic|It's how you're all going to end if we don't move out of the damn fire.|END COIN FLIP - GO TO LINE 22|
+Player|It's time to move now. We group for a fight.|–––> Go TO FORM UP|
+C.O.|I'm nary inclined to disagree with that notion. ||
+Player|I said we hold our positions.|( SPLIT )|
+|THINGS THE HOLD CAN INTERUPT |If POSITION IS HELD|
+The loveable giant|We've got each other either way.|C.O.|We may be cuttin' this a wee bit close, chap.
+UWA~!|That's the spirit! We route them with our fighting skills for sure!|Legacy soldier|We'll be doing a different kind of cutting when they get close enough. Bleed them out.
+Legacy soldier|Blood will be shed- ...or, ichor?|END COIN FLIP - GO TO LINE 34|
+Nerd|These interstellar cephalopods are 90% liquid, like a watermelon. Most of that liquid is highly corrosive to the touch. Touching or ingesting these excretions is neither recommended, or encouraged, by the Republic||
+|END THINGS THE HOLD CAN INTERUPT ||
+Mystic|The ichor flows as the passage of time, a blemish until all is extinguished.||
+Nerd|...it also notably can have hallucinogenic properties.||
+Mystic|This is no hallucination. This is divination. For I speak as I have been shown by those nor bound by our fragile mortal coil.||
+Medic|...I'll have whatever they're having.||
+The loveable giant|The watermelon? My son is quite the fan of watermelon, you know.||
+Aloof sniper|...it looks like they're getting closer. ||
+–––> Go to Team REALLY insists you move|||

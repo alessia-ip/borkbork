@@ -1,14 +1,14 @@
 ///Rumbling Above Us|||
 ///Character|Line||
-C.O.|There seems to be just a tad bit more- trembling. I don't think things are quite so hunky-dory over here!|5|
-Nerd|There's not seismic activity in the crust of the earth - there's vibrations in the air!|5|
+C.O.|I do feel a bit of trembling. We may no longer be all hunky-dory.|5|
+Nerd|That's not seismic in origin—it's gaseous!|5|
 Player|It's getting stronger!|4|
-Mystic|We are but dust motes in the cosmos as is quivers around our fragile mortal beings.|4|
-Player|We should pull back, because whatever that is doesn't sound friendly.||C4-1
+Mystic|Dust motes in the cosmos. Mites in the eyes of God.|4|
+Player|We should pull back, because whatever that is doesn't sound friendly.|10|C4-1
 The loveable giant|Certainly not a spot to stop for a picnic.||
-Aloof sniper|Does anyone have eyes on the source?|1|
+Player|Let's keep onwards.||
+Aloof sniper|Eyes? Any eyes on the source?|1|
 UWA~!|We can't fight a mountain! |1|
 Medic|I haven't seen anything big enough to shake the mountain, and I also don't want to.|3|
-Legacy Soldier|...something doesn't feel right. This feels familiar.||
-Player|Let's keep onwards.||
+Legacy Soldier|...something doesn't feel right. This feels familiar.|2|
 Connect|||C6-1

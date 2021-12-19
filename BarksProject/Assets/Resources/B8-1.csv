@@ -1,12 +1,15 @@
-///gtfo||||
+///gtfo  ///reviewed||||
 ///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
 legacy|Is that a humvee?!|||
-oorah|I got shotgun...literally hehehehe.|||
+oorah|I got shotgun. Get it? Shotgun!|||
 giant|Anyone want a window seat? |||
-Nerd|Medusozoa Tracers specifically lock onto 4WD vehicles. We should escape on foot!|1||
+Nerd|Medusozoa Tracers specifically lock onto 4WD vehicles. We should escape on foot!|4||
 Aloof Sniper|I'd prefer staying boots-on-the-ground.|||
-Mystic|Release me from this jelly-sapien mortal coil.|||
-Player|Take the Humvee!|6|C1|
-Player|Let's stay on foot!|5|XB9-2|
-C.O.|We should make a decision soon...|7||
-Connect|||XB9-2
+Player|Take the Humvee!|7|C1|
+Player|Let's stay on foot!|6|XB9-2|
+C.O.|We should make a decision soon...|2||
+Mystic|This xeno-sapien mortal coil quavers...|2||
+medic|Fuck the car, let's hoof it.|2||
+Giant|Walking can also be a health exercise!|2||
+C.O. |Walking it is then, chaps!|||
+Connect|||XB9-2|

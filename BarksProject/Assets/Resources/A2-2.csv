@@ -1,20 +1,21 @@
-///Dropship Opens|||
+///Dropship Opens  ///reviewed|||
 ///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)
+Command|Red Team, you are 250 meters from drop.||
 Command|Red Team, you are less than 100 meters from the LZ.|3|
 medic|Once more unto the breach.|1|
 C.O.|Steady on, chaps! Make ready!||
 sniper|Brace for carnage.|1|
 mystic|Oh god oh god oh god.|1|
 Command|Red Team, this is the LZ. Drop on your mark. Give 'em hell, lads.|3|
-Player|Drop!||A5
+Player|Drop!|15|A5
 oorah|Oorah! Let's go!||
-giant|One more drop, then homeward bound.|1|
+giant|One more drop, then homeward bound for all of us.|1|
 C.O.|Ready, lads! Brace yourselves!|1|
 nerd|Optimization data over the past eight campaigns indicates now is the best time to jump!|3|
 mystic|Holy god, I can see the battlefield! We're all gonna die!||
 sniper|Only the strong survive. Or the vicious.||
 legacy|This is it. Here it is. I can smell victory.||
-nerd|Optimization data now suggests we are past the optimal LZ, but still have a strong survival index!||
+nerd|Optimization data now suggests we are past the optimal LZ, but still have a strong survival index!|4|
 C.O.|Ready, lads! Keep holding! Ready! Steady on!||
 medic|I've seen these kinds of drops before...|1|
 Connect|||A3-2

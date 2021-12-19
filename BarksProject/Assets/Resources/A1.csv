@@ -1,18 +1,20 @@
 ///Dropship Chatter|||
-///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)
+///Character|Line|Timing|Connection
 Command|Red Team, you are less than a klik from the LZ.||
-oorah|Cracking skulls, boys! Oorah!||
-C.O.|Hold together, lads, and naught shall defeat us.||
+oorah|Crackin' skulls, boys! Oorah!||
+C.O.|Hold, lads! Naught shall defeat us.||
 mystic|Oh god, oh fuck, oh god, oh fuck.|1|
-sniper|Heheheheh. |1|
-medic|Lambs to the slaughter.|1|
-mystic|Oh fuck, oh god, oh fuck, oh god.|1|
-giant|Stick together and we'll be fine.||
-legacy|I've been looking forward to this. ||
+Player|Steady, you fucks.||
+sniper|Hoh hoh hoh hoh...|1|
+medic|Lambs to the slaughter, all of you.|1|
+nerd|According to Republic projections,|1|
+nerd|we have roughly a 69% chance of success |1|
+nerd|in a full frontal assault on Xenomedusozoa colonies...|1|
+giant|We're family! We'll be fine.||
+legacy|I've been waiting for this day...||
 Command|Red team, you are 500 meters from drop.||
-oorah|Yes! Let's go! Jellies get fucked!||
+Player|Get ready, we drop on my say so.||A2-1
+oorah|Let's go! Wobblies get fucked!||
 mystic|This is it. This is how I die.||
-C.O.|As I said, lad, keep formation and we'll pull through.||
-Player|Get ready, everyone. ||A2-1
-Command|Red team, you are 250 meters from drop.||
+C.O.|Keep formation, and we'll pull through!||
 Connect|||A2-2

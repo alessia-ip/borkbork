@@ -399,12 +399,16 @@ public class StringReader : MonoBehaviour
         if (filepath.Contains("E"))
         {
             SceneManager.LoadScene(3);
+            return;
         }
         
         if (filepath.Contains("Y"))
         {
             SceneManager.LoadScene(4);
+            return;
         }
+        
+        
         
         allDialogue.Clear();
         /*fullPath = Application.dataPath + folderPath + filepath;

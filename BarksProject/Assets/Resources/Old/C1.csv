@@ -1,0 +1,9 @@
+///take the van||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+Medic|Look at that war-torn scenery.|||
+C.O.|This is quite a smooth ride!|||
+Mystic|Danger lies ahead in that distant mountain pass...||1|
+Nerd|"My planetary map says the ""Spooky Plasma Mountain Death Pass"" is just ahead!"||1|
+giant|Everyone have their seatbelts on?|||
+Player|Go through the mountain pass!|4||
+Connect|||B11|

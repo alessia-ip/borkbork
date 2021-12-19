@@ -1,14 +1,15 @@
-///Lads Want to Retreat|||
+///Lads Want to Retreat||///reviewed|
 ///Character|Line||
-Player|We should think about what to do next.|4|
+Player|So what's next?|4|
 The loveable giant|I wonder if we're far enough away now. ||
-C.O.|Perhaps we consider a further retreat from this position.||
+C.O.|Perhaps we retreat further from here.||
 Player|Let's retreat.|8|B3-2
-Aloof sniper|We could pull back for a better vantage point.||
+Aloof sniper|We can scope the situation from here.||
 Player|Let's stay our position.|8|
-UWA~!|We can regroup for a better assault!|1|
-Nerd|We will gain a strategic advantage by following Republic guidelines on the matter, as we have all reviewed in our handbooks. |6|
-Legacy Soldier|Are we to flee from these pathetic creatures?||
-Mystic|Water crashing upon rocks, split in two, the current quickens.||
-Medic|It's better than being turned to paste because ain't no way I'm putting that back together.|3|
+UWA~!|Let's rip into them.|1|
+Nerd|We will gain a strategic advantage by following Republic guidlines on the matter, as we have all reviewed in our handbooks. |6|
+Legacy Soldier|Running from these spineless things?||
+Mystic|Waves crash over endless desert. ||
+Medic|I'm not gettin liquified, let's bounce.|3|
+Mystic|A current quickens in the womb. Children of the sun.||
 Connect|||B2

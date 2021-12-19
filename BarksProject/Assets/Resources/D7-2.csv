@@ -1,0 +1,12 @@
+///Escape||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+C.O.|Get it together!|||
+sniper|Come on, let's hoof it.|||
+giant|We gotta get out of here.|||
+nerd|It's what they would have wanted...|||
+oorah|Time to move.|||
+PLAYER|Let's rest for a moment|5|D10|
+medic|Let's scram.|||
+mystic|The winds will carry us forward.|||
+legacy|I'm not dying on this rock.|||
+Connect|||D10|

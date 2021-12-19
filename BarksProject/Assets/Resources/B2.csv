@@ -1,9 +1,13 @@
-///Push ahead w/ objective||||
+///Push ahead w/ objective   ///reviewed||||
 ///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
-oorah|Pew! Pew! Pew! We're Oscar Mike!|||
-medic|Shit, we're pinned down! Split up!|1||
+oorah|We're Oscar Mike! Charlie!|||
+medic|We're pinned down. Split up or get shot up.|1||
 nerd|Gelatinous artillery is eviscerating us! We have to disperse, sir! |||
-sniper|Stay together! I have all the meat shields I need!|1||
+C.O.|Hold!|||
+sniper|Stay together! Cover me, dogmeat!|1||
 Player|Disperse!|4|B3|
-legacy|Let our fearless leader give the order!|5||
-Connect|Stick together!||B-4|
+giant|Don't risk getting separated!|||
+legacy|We have to split up!|||
+mystic|A schism, a spasm, unmanageable creatures.|||
+legacy|We follow our orders to the last.|5||
+Connect|||B3|

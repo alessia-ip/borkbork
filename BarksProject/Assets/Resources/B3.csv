@@ -1,9 +1,12 @@
-///Disperse||||
-///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
-nerd|Roger! I'll handily evade this ceaseless barrage of gelatinous munitions!|||
-legacy|Charge!! For the Republic!! |||
-giant|My love for my family will keep me alive! |||
-mystic|Everything is in slow-motion now. |||
-C.O.|We've made it to the rally point in one piece!|1||
-Player|Secure the area, men!|8||
-Connect|||B6|
+///Disperse  ///reviewed|||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)
+nerd|Roger! Evade the barrage of gelatinous munitions! The nonnewtonian nature of the projectiles gives them a straightforward enough pattern!||
+legacy|For the Republic!||
+giant|My family's love will protect me!||
+mystic|The aspic of time stumbles.||
+C.O.|We've nearly made it!|1|
+Player|Secure the area, men!|5|B6
+oorah|Get out of here!|2|
+sniper|Little sport in this.|2|
+medic|Shut up and get gone!||
+Connect|||B6

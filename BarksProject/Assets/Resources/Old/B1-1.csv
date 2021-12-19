@@ -1,0 +1,12 @@
+///Form up||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+Medic|No point checking vitals...everyone's dead.|1||
+legacy|Surely, the Republic will send more reinforcements!|1||
+Mystic|Good god, I think the jellies turned my brain to mush!|1||
+giant|So many lost to senseless violence...|1||
+sniper|This is war. There were bound to be casualties heh heh heh.|1||
+Nerd|Sir, I recommend we advance towards the agreed-upon vantage point to gain our bearings and find ample cover!|1||
+Player|Move up to the objective!|6|B2|
+oorah|I wanna dance with some jigglies!|3||
+C.O.|Remain vigilant, lads!|3||
+Connect|||B2-2|

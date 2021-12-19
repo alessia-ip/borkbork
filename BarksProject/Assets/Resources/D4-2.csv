@@ -2,11 +2,11 @@
 ///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
 oorah|We got an armored jiggly!|||
 nerd|It appears to be echinodermic in nature...|||
-legacy|Shoot for the fucking mouth.|||
-C.O.|Hohoho! CHARGE!|||
-medic|I can't get a lock on it!|||
+PLAYER|Fight with honor, men!|||
+legacy|Shoot for the fucking mouth.|1||
+C.O.|Hohoho! CHARGE!|1||
+medic|I can't get a lock on it!|1||
 sniper|It's too fast for me!|||
 mystic|We're not getting out of this one!|||
-the one who dies|I love my wife!|||
-PLAYER|Fight with honor, men!|||
+the one who dies|I love my wife!|2||
 Connect|||XD6|

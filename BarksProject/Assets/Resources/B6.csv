@@ -1,11 +1,12 @@
-///Rally Point Is Empty||||
+///Rally Point Is Empty   ///reviewed||||
 ///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
 legacy|Where's the rest of the platoon?|||
-mystic|We're the only men that survived the drop. |1||
-oorah|Fuck it. More jellies for us!|||
-sniper|Aren't even any corpses to hide behind.|1||
-giant|Why can't we just make peace with the jellies?!|||
-medic|Oughta look for medicine around here.|||
-C.O.|Don't lose hearts, lad! The fight isn't done just yet!|||
+mystic|Something terrible happened here.|1||
+nerd|They're... they're all dead...|||
+oorah|Fuck it. More jams for us!|1||
 Player|This isn't looking too good...|||
+sniper|Aren't even any corpses to hide behind.|||
+giant|Why can't we just make peace?!|||
+medic|Oughtta look for spare parts around here.|||
+C.O.|Don't lose heart! Let's show them what for!|||
 Connect|||B7|

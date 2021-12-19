@@ -1,10 +1,14 @@
-///Command says gtfo||||
+///Command says gtfo  ///reviewed||||
 ///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
-Command|Get off the planet! We're nuking those fuckers!|||
-giant|I promised my daughter I'd be there for her science fair. |1||
-medic|Time to lay down and die. |||
-C.O.|It was truly an honour, gentlemen.|1||
-nerd|I knew I should've gotten my PhD instead of joining the war.|||
-Player|LET'S FIND A WAY OFF THIS PLANET!|4|B8-1|
-Player|Lay down and die...|4|ZB8-2|
-Mystic|A deadly rose will soon bloom above...|10||
+sniper|They're nuking those fuckers!|||
+Player|LET'S FIND A WAY OFF THIS PLANET!|8|B8-1|
+Player|We should...lay down and die...|8|ZB8-2|
+giant|I promised Lea I'd be home for Christmas!|1||
+medic|Time to lay down and join the others. |||
+C.O.|An honour, gentlemen. I doff my cap.|1||
+nerd|I knew I should've gotten my PhD istead of joining the war.|||
+Mystic|Wisdom will save the mind, yet not the gristle.|||
+oorah|Think of the size of that explosion!|||
+Legacy|No price is too great for victory.|||
+Mystic|A whispering rose takes bloom above...|10||
+Connect|||ZB8-2|

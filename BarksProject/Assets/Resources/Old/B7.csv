@@ -1,0 +1,10 @@
+///Command says gtfo||||
+///Character|Line|Timing|Connection (block name - FOR PLAYER ONLY)|Effects
+Command|Get off the planet! We're nuking those fuckers!|||
+giant|I promised my daughter I'd be there for her science fair. |1||
+medic|Time to lay down and die. |||
+C.O.|It was truly an honour, gentlemen.|1||
+nerd|I knew I should've gotten my PhD instead of joining the war.|||
+Player|LET'S FIND A WAY OFF THIS PLANET!|4|B8-1|
+Player|Lay down and die...|4|ZB8-2|
+Mystic|A deadly rose will soon bloom above...|10||
