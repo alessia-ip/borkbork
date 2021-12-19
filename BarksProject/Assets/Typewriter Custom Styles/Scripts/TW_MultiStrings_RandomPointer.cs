@@ -146,7 +146,7 @@ public class TW_MultiStrings_RandomPointer : MonoBehaviour {
             //play audio here
             if (сharIndex % 2 == 0)
             {
-                aud.PlayOneShot(audClip);
+                aud.PlayOneShot(audClip, 0.3f);
             }
             string emptyString = new string(' ', ORIGINAL.Length - 1);
             string TEXT = ORIGINAL.Substring(0, сharIndex) + RandomChar(ORIGINAL, сharIndex);
